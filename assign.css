@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(72, 116, 236);
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    padding: 20px;
+    
+}
+/* Style for the left section */
+.container .left{
+    width: 40%;
+    
+
+}
+.container .left h1{
+    margin-top: 25px;
+    font-size: 50px;
+    text-transform: capitalize;
+
+}
+
+.container .left p{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 15px;
+    color: black;
+}
+
+.container .left button{
+    background-color: rgb(15, 114, 114);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    margin-top: 200px;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+
+.container .left button:hover {
+    background-color: blue
+}
+
+.left a{
+    color: #ffff;
+    font-size: 25px ;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.left a i:hover{
+    font-size: 25px;
+    background-color: blue ;
+}
+
+/* style fo the right section */
+
+.container .right{
+    width: 40%;
+    height: 300px;
+    animation: up-down 2s infinite alternate-reverse;
+}
+
+.container .right img{
+    height: 100%;
+    width: 100%;
+    margin: 80px auto;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(-10px);
+    }
+
+    90%{
+        transform: rotateY(-10px);
+    }
+    
+}
+
+/* Style for the Client Section and logo */
+
+.bottom{
+    background-color: rgba(192, 187, 187, 0.836);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    
+    
+
+}
+
+.bottom .logo {
+    width: 8%;
+    
+    height: 40px;
+}
+
+.bottom .logo img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1.5);
+    overflow: hidden;
+    transition: all 1s;
+    
+    
+}
+
+.bottom .logo img:hover{
+    filter: none;
+    transform: scale(1.3);
+}
+
+/* Section of Our Services */
+
+.services{
+    background-color:  rgba(192, 187, 187, 0.836);
+    padding: 35px;
+}
+
+.services h1{
+    color: rgb(25, 22, 243);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 60px;
+
+
+}
+
+.services p{
+
+    margin-top: 15px;
+    text-transform: bold;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+
+.services  .service-container{
+    
+    height: 300px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 20px ;
+    
+}
+
+.service-container .service-flex{
+    height: 270px;
+    width: 20%;
+    background-color:white;
+    
+}
+
+
+.service-flex i{
+    color: blue;
+    font-size: 35px ;
+    margin: 25px;
+    text-decoration: none;
+    transition: all 1s;
+
+    
+
+}
+
+.service-flex h2{
+    margin-top: 60px;
+    text-align: end;
+    padding: 15px;
+}
+
+.service-flex:hover{
+    
+    transform: translateY(-20px);
+    
+       
+} 
+
+.team-container{
+    text-align: center;
+    background-color: rgb(57, 161, 161);
+}
+
+.team-container h1{
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+.team-container p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+.team-container .team-box{
+    width: 100%;
+    margin-top: 25px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-box .box{
+    margin: 10px;
+    width: 39%;
+    height: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    background-color: white;
+    transition: all 2s;
+}
+
+.team-box .box:hover{
+    transform: translateY(-20px);
+} 
+
+.team-box .box .main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-box .box .main .left{
+    margin-top: 35px;
+    margin-left: 15px;
+    width:30%;
+
+
+}
+
+.team-box .box .main .left img{
+    height: 100%;
+    width:100%;
+    border-radius: 75px;
+}
+
+.team-box .box .main .right{
+    margin-top: 25px;
+    width: 60%;
+}
+
+.team-box .box .main .right h2{
+    text-align: left;
+    color: aqua;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.team-box .box .main .right h3{
+    text-align: left;
+    color: blueviolet;
+}
+
+.team-box .box .main .right p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.team-box .box .main .right .social  i{
+    margin-top: 35px ;
+    margin-right: 20px;
+    padding: 10px;
+    
+}
+
+.team-box .box .main .right .social i:hover{
+    background-color: rgb(51, 153, 194);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
